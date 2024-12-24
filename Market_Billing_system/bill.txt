@@ -1,2 +1,6 @@
-	Banana 100 30
+	egg : 10 : 1
+
+	kola : 300 : 20
+
+tomato : 20 : 20
 
