@@ -1,0 +1,73 @@
+# Supermarket Billing System
+
+This project is a simple **Supermarket Billing System** implemented in C++. It allows users to manage inventory, add items to a bill, and calculate the total amount for purchased items. The system operates through a command-line interface with features to enhance usability and streamline the billing process.
+
+## Features
+
+1. **Add Items to Inventory**
+   - Input item name, rate, and quantity.
+   - Save the items into a file (`bill.txt`) for persistent storage.
+
+2. **Print Bill**
+   - Retrieve items from the inventory.
+   - Generate a bill for selected items and their quantities.
+   - Update inventory quantities after each purchase.
+
+3. **Session Management**
+   - Allows users to close the session after billing.
+   - Displays the total bill amount at the end.
+
+4. **File Management**
+   - Uses files (`bill.txt` and `bill_temp.txt`) to manage inventory data.
+   - Automatically handles file updates and renaming.
+
+5. **Error Handling**
+   - Handles insufficient stock scenarios.
+   - Provides feedback if items are not found in the inventory.
+
+## Prerequisites
+
+- **Operating System**: Windows (uses `Windows.h` for sleep and clear screen functionality).
+- **C++ Compiler**: Compatible with modern C++ standards (e.g., GCC, MSVC).
+
+## Project Structure
+
+```
+SupermarketBillingSystem/
+|-- main.cpp        # Main source code file
+|-- bill.txt        # Inventory file (auto-created if not present)
+```
+
+## Usage Instructions
+
+### Main Menu
+
+When you run the program, you'll see the following options:
+
+1. **Add Item**
+   - Allows you to add items to the inventory.
+   - Enter item name, rate, and quantity.
+
+2. **Print Bill**
+   - Retrieve items from the inventory.
+   - Enter the item name and quantity to calculate the bill.
+   - Displays the bill details and updates the inventory.
+
+3. **Exit**
+   - Exits the program.
+
+### Inventory File Format
+
+The `bill.txt` file stores inventory data in the following format:
+```
+<ItemName> : <Rate> : <Quantity>
+```
+Example:
+```
+Apples : 3 : 50
+Bananas : 2 : 30
+Oranges : 4 : 20
+```
+---
+
+Enjoy using the Supermarket Billing System! If you encounter any issues or have suggestions, feel free to open an issue in the repository.

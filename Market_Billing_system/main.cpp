@@ -148,10 +148,8 @@ void printBill()
                         int newQuant = itemQuant - quant;
                         itemQuant = newQuant;
                         count += amount;
-                        
-                        
-                            out <<"\t"<< itemName << " : " << itemRate << " : " << newQuant << endl;
-                        
+
+                        out << "\t" << itemName << " : " << itemRate << " : " << newQuant << endl;
                     }
                     else
                     {
@@ -163,16 +161,15 @@ void printBill()
                 {
                     out << line << endl;
                 }
-               
             }
-             if (!found)
-                {
-                    cout << "\tItem not available!" << endl;
-                }
-                in.close();
-                out.close();
-                remove("bill.txt");
-                rename("bill_temp.txt", "bill.txt");
+            if (!found)
+            {
+                cout << "\tItem not available!" << endl;
+            }
+            in.close();
+            out.close();
+            remove("bill.txt");
+            rename("bill_temp.txt", "bill.txt");
         }
         else if (choice == 2)
         {
@@ -194,6 +191,7 @@ void printBill()
 int main()
 {
     Bill b;
+    
 
     bool exit = false;
     while (!exit)

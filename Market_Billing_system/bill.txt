@@ -2,5 +2,5 @@
 
 	kola : 300 : 20
 
-tomato : 20 : 20
+	tomato : 20 : 20
 
