@@ -39,6 +39,56 @@ public:
     }
 };
 
+void addItem(Bill b)
+{
+
+    bool close = false;
+    while (!close)
+    {
+        int choice;
+        cout << "\t1.Add." << endl;
+        cout << "\t2.Close." << endl;
+        cout<<"\tEnter your choice: ";
+        cin >> choice;
+
+        if (choice == 1)
+        {
+            system("cls");
+            string item;
+            int rate, quant;
+            cout << "\tEnter item name: ";
+            cin >> item;
+            cout << "\tEnter rate: ";
+            cin >> rate;
+            cout << "\tEnter quantity: ";
+            cin >> quant;
+            b.setItem(item);
+            b.setRate(rate);
+            b.setQuantity(quant);
+
+            ofstream out("bill.txt", ios::app);
+            if (!out)
+            {
+                cout << "\tError: File can't open" << endl;
+            }
+            else
+            {
+                out << "\t" << b.getItem() << " " << b.getRate() << " " << b.getQuantity() << endl
+                    << endl;
+            }
+            out.close();
+            cout << "\tItem added Successfully!" << endl;
+            Sleep(3000);
+        }
+        else if (choice == 2)
+        {
+            system("cls");
+            close = true;
+            cout << "\tBack to main menu..........." << endl;
+            Sleep(3000);
+        }
+    }
+}
 
 int main()
 {
