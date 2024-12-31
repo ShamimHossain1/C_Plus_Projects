@@ -1,0 +1,54 @@
+# Hotel Accommodation Management System
+
+A comprehensive Hotel Accommodation Management System developed in C++ to streamline hotel operations such as room booking, customer management, and billing. This project demonstrates the use of Object-Oriented Programming (OOP) concepts and file handling in C++.
+
+---
+
+## Features
+
+- **Room Booking**: Allows customers to book available rooms.
+- **Customer Management**: Stores and manages customer details.
+- **Room Availability**: Displays current availability of rooms.
+- **Billing**: Generates bills for customers based on their stay duration and services used.
+- **File Handling**: Persistently stores data like customer records and room details for future reference.
+
+---
+
+## Requirements
+
+- C++ Compiler (e.g., GCC, MSVC)
+- A terminal or IDE to run the program
+
+---
+
+## Installation
+
+1. **Clone the Repository**:
+
+2. **Compile the Code**:
+
+3. **Run the Program**:
+
+---
+
+## Usage
+
+1. **Launch the Program**: Run the executable.
+2. **Navigate the Menu**: Use the menu options to:
+   - Book a room
+   - View room availability
+   - Add customer information
+   - Generate bills
+3. **Exit**: Save data and exit the program.
+
+---
+
+## Classes
+
+### Room
+- **Attributes**: Room number, type, status (available/booked), price
+- **Methods**: Check availability, book room, display details
+
+---
+
+Happy coding! 🚀
