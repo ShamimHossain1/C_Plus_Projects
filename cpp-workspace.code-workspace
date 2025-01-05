@@ -14,7 +14,8 @@
 			"ostream": "cpp",
 			"queue": "cpp",
 			"utility": "cpp",
-			"iosfwd": "cpp"
+			"iosfwd": "cpp",
+			"xstring": "cpp"
 		}
 	}
 }
