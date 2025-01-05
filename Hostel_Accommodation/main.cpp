@@ -69,6 +69,42 @@ public:
 
 int main()
 {
+    Hostel Shera("Shera", 30000, 100);
+    // ofstream out("StudentFile.txt");
+    ofstream out("HostelFile.txt");
+    out<<"\t"<<Shera.getName()<<" : "<<Shera.getRent()<<" : "<<Shera.getBed()<<endl<<endl;
+    cout<<"Hostel Data Saved"<<endl;
+    out.close();
+
+    Student Sauda;
+
+    bool exit = false;
+    while(!exit){
+        system("cls");
+        int val;
+        cout<<"\tWelcome To Hostel Accommodation System"<<endl;
+        cout<<"\t**************************************"<<endl;
+        cout<<"\t1.Reserve A Bed."<<endl;
+        cout<<"\t2.Exit."<<endl;
+        cout<<"\tEnter Choice: ";
+        cin>>val;
+
+        if(val ==1){
+            system("cls");
+            string name, rollNo, address;
+            cout<<"\tEnter Your Name: ";
+            cin>>name;
+            cout<<"\tEnter Your Roll No: ";
+            cin>>rollNo;
+            cout<<"\tEnter Your Address: ";
+            cin>>address;
+
+            Sauda.setName(name);
+            Sauda.setRollNo(rollNo);
+            Sauda.setAddress(address);
+        }
+
+    }
 
     return 0;
 }
