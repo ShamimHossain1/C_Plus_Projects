@@ -1,0 +1,48 @@
+# Hostel Accommodation System
+
+This is a C++ application that simulates a hostel accommodation system. It allows students to reserve beds in a hostel and saves the data to files for persistence.
+
+## Features
+
+- **Hostel Management**: Maintain information about the hostel, such as name, rent, and available beds.
+- **Student Information**: Input and store student details like name, roll number, and address.
+- **Bed Reservation**: Reserve a bed if available, with details updated in a file.
+- **File Handling**: All data is stored and managed in text files for persistence.
+
+## Files Used
+
+- `HostelFile.txt`: Stores hostel details, including rent and the number of available beds.
+- `StudentFile.txt`: Logs details of students who reserve beds.
+
+## How It Works
+
+1. The program initializes hostel information and saves it in `HostelFile.txt`.
+2. Students can choose to reserve a bed by providing their details.
+3. If a bed is available, the program updates the file with the new bed count and logs the student's details in `StudentFile.txt`.
+4. If no beds are available, the program informs the user.
+
+## Sample Menu
+
+```text
+	Welcome To Hostel Accommodation System
+	**************************************
+	1.Reserve A Bed.
+	2.Exit.
+	Enter Choice: 
+```
+
+## Code Structure
+
+### Classes
+
+#### Hostel
+- Stores hostel details like name, rent, and available beds.
+- Handles bed reservation and updates the hostel file.
+
+#### Student
+- Stores student details like name, roll number, and address.
+- Allows setting and retrieving student information.
+
+### Main Function
+- Provides a menu-driven interface for the user.
+- Handles user input and interacts with the `Hostel` and `Student` classes.
