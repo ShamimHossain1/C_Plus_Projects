@@ -15,7 +15,8 @@
 			"queue": "cpp",
 			"utility": "cpp",
 			"iosfwd": "cpp",
-			"xstring": "cpp"
+			"xstring": "cpp",
+			"xiosbase": "cpp"
 		}
 	}
 }
